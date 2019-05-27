@@ -1,0 +1,53 @@
+.article-generator {
+  margin: auto;
+  text-align: center;
+  align-content: center;
+  width: 60%;
+}
+
+.form-file-property {
+  width: 150px;
+  margin: auto;
+}
+
+.error-icon {
+  color: red;
+}
+.form-property-error-message,
+.form-error-message {
+}
+
+.form-property-wrapper {
+  display: block;
+  margin-top: 10px;
+}
+
+.form-property-label {
+  display: block;
+}
+
+.form-property-input {
+  display: block;
+  margin: auto;
+}
+
+.form-property-textarea {
+  display: block;
+  margin: auto;
+}
+
+.uploaded-image-preview {
+  height: 50px;
+  width: auto;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.form-submit-button {
+  display: block;
+  margin-top: 10px;
+  border: 1px solid black;
+  width: 70px;
+  margin: auto;
+}
