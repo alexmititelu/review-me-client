@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 const FormPropertyInput = ({
   type,
@@ -11,14 +11,14 @@ const FormPropertyInput = ({
     <div className="form-property-wrapper">
       <span className="form-property-label"> {label}: </span>
       <input
-        className="form-property-input"
+        className="form-property-input form-control"
         type={type}
         placeholder={placeholder}
         onChange={ev => changePropertyValue(ev.target.value)}
       />
-      <span className="form-property-error-message">
+      <div className="form-property-error-message">
         {errorMessage ? errorMessage : <br />}
-      </span>
+      </div>
     </div>
   );
 };

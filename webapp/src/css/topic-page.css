@@ -1,0 +1,83 @@
+.topic-container {
+  padding-top: 50px;
+  margin: auto;
+  text-align: center;
+  width: 75%;
+}
+
+.topic-main-property {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.topic-secondary-property {
+  display: block;
+  margin-top: 10px;
+}
+
+.topic-reviews-section {
+  display: block;
+}
+
+.topic-date,
+.review-date {
+  color: cadetblue;
+}
+
+.topic-owner,
+.review-owner {
+  font-weight: bold;
+}
+
+.topic-review-title,
+.topic-review-text {
+  display: block;
+  margin-top: 7px;
+}
+
+.topic-review-title {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.topic-review-wrapper {
+  margin-top: 4em;
+  display: block;
+}
+
+.topic-review-reviewer-section {
+  margin-top: 7px;
+  float: right;
+  display: block;
+}
+
+.button {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+  /* background-color: gray; */
+  color: grey;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 4em;
+  width: 180px;
+}
+
+.show-more-section {
+  margin-bottom: 100px;
+}
+
+.add-review-button {
+  margin-top: 15px;
+}
+
+.add-review-button-text {
+  color: cadetblue;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.new-review-container {
+  width: 400px;
+  margin: auto;
+}
