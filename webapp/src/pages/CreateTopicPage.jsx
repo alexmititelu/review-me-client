@@ -124,7 +124,7 @@ const CreateTopicPage = () => {
       console.log(topic);
 
       axios
-        .post("http://127.0.0.1:8081/api/rest/topics", topic)
+        .post("/api/rest/topics", topic)
         .then(({ data }) => {
           if (data.success === true) {
             setSuccessMessage(
@@ -178,7 +178,7 @@ const CreateTopicPage = () => {
         <FormPropertyTags tags={topicTags} setTags={setTopicTags} />
 
         <div className="form-property-wrapper">
-          <span className="form-property-label"> Photos </span>
+          <span className="form-property-label"> Photo </span>
           <div className="form-file-property">
             <FileBase64 multiple={true} onDone={file => getFile(file)} />
           </div>

@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React from "react";
 import TopicSummary from "./TopicSummary";
 
 const TopicsContainer = ({ topics, setLoadMoreTopics }) => {
@@ -12,6 +11,13 @@ const TopicsContainer = ({ topics, setLoadMoreTopics }) => {
               <TopicSummary {...topic} key={index} />
             ))}
           </div>
+        </>
+      ) : (
+        <div className="topics-container-message">No topics found</div>
+      )}
+
+      {topics.length > 0 && topics.length % 10 === 0 ? (
+        <>
           <div
             className="button show-more-section"
             onClick={() => setLoadMoreTopics(true)}
@@ -20,7 +26,7 @@ const TopicsContainer = ({ topics, setLoadMoreTopics }) => {
           </div>
         </>
       ) : (
-        <span>No topics found</span>
+        ""
       )}
     </React.Fragment>
   );

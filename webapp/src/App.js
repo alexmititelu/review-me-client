@@ -13,6 +13,8 @@ function App() {
         <Route exact path="/new-topic" component={CreateTopicPage} />
         <Route exact path="/topics/:id" component={TopicPage} />
         <Route path="/home" component={HomePage} />
+        <Route path="/" component={HomePage} />
+        <Route path="/index.html" component={HomePage} />
         <Route component={NotFoundPage} />
       </Switch>
     </Router>

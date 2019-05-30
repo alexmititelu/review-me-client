@@ -1,5 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
-import axios from "axios";
+import React, { useRef } from "react";
 import TopicReview from "./TopicReview";
 
 const TopicReviews = ({ reviews, setLoadMoreReviews }) => {

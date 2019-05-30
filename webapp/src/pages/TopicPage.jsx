@@ -28,6 +28,7 @@ const TopicPage = ({ match }) => {
     description,
     qrCode,
     owner: { name: ownerName, email: ownerEmail },
+    photo,
     datePosted
   }) => {
     setTopicData({
@@ -36,7 +37,8 @@ const TopicPage = ({ match }) => {
       qrCode,
       ownerName,
       ownerEmail,
-      datePosted
+      datePosted,
+      photo
     });
     console.log(topicData);
   };
